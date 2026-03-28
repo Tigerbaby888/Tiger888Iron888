@@ -473,20 +473,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/fireba
 import { getDatabase, ref, push, onValue, remove, set, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-/* =====================================================
-   ★ 請將下方替換成你的新 Firebase 專案 config ★
-   Firebase Console → 專案設定 → 你的應用程式 → SDK 設定
-   ===================================================== */
 const app = initializeApp({
-  apiKey: "貼上你的 apiKey",
-  authDomain: "貼上你的 authDomain",
-  databaseURL: "貼上你的 databaseURL",
-  projectId: "貼上你的 projectId",
-  storageBucket: "貼上你的 storageBucket",
-  messagingSenderId: "貼上你的 messagingSenderId",
-  appId: "貼上你的 appId"
+  apiKey: "AIzaSyDPZoWJ9PfJbae_KO3tfVTZREleaOTPZpA",
+  authDomain: "tiger888iron888.firebaseapp.com",
+  databaseURL: "https://tiger888iron888-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "tiger888iron888",
+  storageBucket: "tiger888iron888.firebasestorage.app",
+  messagingSenderId: "636230954446",
+  appId: "1:636230954446:web:c620e0353e551d5f70cf9f"
 });
-/* ===================================================== */
 const db = getDatabase(app);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
